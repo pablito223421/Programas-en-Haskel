@@ -1,0 +1,21 @@
+:m + Data.List
+a=[-1,-1,-2,2,3,1,1]
+find (>0) a
+find (>10) a
+elemIndex 1 a
+elemIndex 10 a
+elemIndices 1 a
+elemIndices 10 a
+findIndex (>0) a
+findIndex (>10) a
+findIndices (>0) a
+findIndices (>10) a
+
+zip a a
+zip3 a a a
+zipWith (+) a a
+zipWith3 (\x y z->x+y+z) a a a
+y=zip a a 
+z=zip3 a a a
+unzip y 
+unzip3 z

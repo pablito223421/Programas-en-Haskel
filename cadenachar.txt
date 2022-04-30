@@ -1,0 +1,8 @@
+--a = "1/2+2/3 8/5-7/9 15/8÷2/5 3/5*9/5"
+import Data.Char
+
+partir :: String ->Char-> [String]
+partir [] c = [""]
+partir (x:xs) c
+| x == c = "" : partir xs c
+| otherwise = (x : head (partir xs c)) :( tail (partir xs c))

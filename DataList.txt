@@ -1,0 +1,52 @@
+https://downloads.haskell.org/~ghc/latest/docs/html/libraries/
+:m + Data.List
+a = [1,2,3,1,2,3,1,1]
+nub a
+intersperse '.' "Hola"
+intersperse 0 a
+intercalate ":" ["Hola","Como","Estas"]  
+b=take 2 $ repeat a
+b
+intercalate [10] b 
+transpose [['a','b','c'],['d','e','f'],['g','h','i']]
+concat b
+concatMap (replicate 2)  a
+and $ map (>0) a
+or $ map (>2) a
+all (>0) a
+any (>2) a
+take 10 $ iterate (+2) 1
+take 10 $ iterate (*10) 10 
+c = [1..100]
+splitAt 2 c
+splitAt 50 c
+splitAt 0 c
+filter (\x->mod x 2 /=0) c
+takeWhile (\x->mod x 2 /=0) c
+dropWhile (\x->mod x 2 /=0) c
+takeWhile (<50) c
+dropWhile (<50) c
+span (<50) c
+break (==50) c
+partition (==50) c
+a
+sort a 
+group a
+group $ sort a
+isInfixOf [1,2,3] a
+isInfixOf [3,2,1] a
+isPrefixOf [2,3] a
+isPrefixOf [1,2] a
+isSuffixOf [1,1] a
+inits a
+tails a
+elem 1 a
+notElem 1 a 
+
+
+
+
+
+
+
+

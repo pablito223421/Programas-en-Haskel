@@ -1,0 +1,36 @@
+
+:m + Data.Char
+isControl '\n'
+isSpace ' '
+isLower 'a'
+isUpper 'A' 
+isAlpha 'A'
+isAlphaNum '5'  
+isPrint 'y'
+isDigit '4'
+isOctDigit '2'
+isHexDigit 'A'
+isLetter 'l'
+isMark ' '
+isNumber '2' 
+isPunctuation ',' 
+isSymbol '÷'
+isSeparator  ' '
+isAscii  'e'
+isLatin1 'é'
+isAsciiUpper 'E' 
+isAsciiLower  'e'
+
+all isLower "prueba"
+all isLower "Prueba"
+any isLower "prueba"
+any isLower "Prueba"
+
+map (toUpper) "prueba" 
+map (toLower) "Prueba"
+
+digitToInt '4'
+intToDigit 4
+chr 45
+ord '-'
+
